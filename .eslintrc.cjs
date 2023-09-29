@@ -3,7 +3,7 @@ module.exports = {
 		browser: true,
 		es2021: true,
 	},
-	extends: ['xo', 'plugin:astro/recommended', 'prettier'],
+	extends: ['xo', 'plugin:astro/recommended', 'plugin:tailwindcss/recommended', 'prettier'],
 	overrides: [
 		{
 			env: {
@@ -34,4 +34,9 @@ module.exports = {
 		sourceType: 'module',
 	},
 	rules: {},
+	settings: {
+		tailwindcss: {
+			config: 'tailwind.config.cjs',
+		},
+	},
 };

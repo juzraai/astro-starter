@@ -5,6 +5,10 @@
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnPaste": true,
 	"editor.formatOnSave": true,
+	"editor.quickSuggestions": {
+		"strings": true
+	},
 	"eslint.format.enable": false,
-	"eslint.validate": ["javascript", "astro", "typescript"]
+	"eslint.validate": ["javascript", "astro", "typescript"],
+	"tailwindCSS.emmetCompletions": true
 }
