@@ -31,5 +31,7 @@ How to use:
 -   Run `npm i -g pnpm` to install [PNPM](https://pnpm.io/) for faster dependency management
 -   Run `pnpm i` to install dependencies
 -   Reload VS Code window (command palette can help you, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>)
--   Edit the project name in `package.json`, customize the ESLint, Prettier or VSCode config to fit your needs
+-   Edit the project name in `package.json`
+-   Edit your name in `LICENSE` file
+-   Customize the ESLint, Prettier or VSCode configs to fit your needs
 -   Run `pnpm dev` and start developing your Astro project 🚀
