@@ -6,26 +6,30 @@ module.exports = {
 	extends: ['xo', 'plugin:astro/recommended', 'plugin:tailwindcss/recommended', 'prettier'],
 	overrides: [
 		{
+			files: ['.eslintrc.{js,cjs}'],
 			env: {
 				node: true,
 			},
-			files: ['.eslintrc.{js,cjs}'],
 			parserOptions: {
 				sourceType: 'script',
 			},
 		},
 		{
-			extends: ['xo-typescript'],
-			files: ['*.ts', '*.tsx', '*.astro'],
-		},
-		{
-			// Extends: ['xo-typescript'],
 			files: ['*.astro'],
 			parser: 'astro-eslint-parser',
 			parserOptions: {
 				parser: '@typescript-eslint/parser',
 				extraFileExtensions: ['.astro'],
 			},
+		},
+		{
+			files: ['*.ts', '*.tsx', '*.astro'],
+			extends: [
+				'xo-typescript',
+				'plugin:astro/recommended',
+				'plugin:tailwindcss/recommended',
+				'prettier',
+			],
 		},
 	],
 	parserOptions: {
